@@ -1,0 +1,40 @@
+{
+	"manifest_version": 3,
+	"name": "Video Screenshot",
+	"description": "Create a screenshot of any video!",
+	"version": "0.1.0",
+	"minimum_chrome_version": "88",
+	"browser_specific_settings": {
+		"gecko_android": {
+			"strict_min_version": "113.0"
+		},
+		"gecko": {
+			"id": "{1d3db426-0801-40ea-b1e7-5fb3661773ef}",
+			"strict_min_version": "58.0"
+		}
+	},
+	"options_ui": {
+		"page": "options/options.html"
+	},
+	"icons": {
+		"128": "icon128.png"
+	},
+	"permissions": [
+		"scripting",
+		"activeTab",
+		"clipboardWrite",
+		"storage"
+	],
+	"action": {
+		"default_title": "Screenshot video",
+		"default_icon": {
+			"128": "icon128.png"
+		}
+	},
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"type": "module"
+	}
+}

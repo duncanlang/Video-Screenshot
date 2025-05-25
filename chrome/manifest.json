@@ -1,0 +1,29 @@
+{
+	"manifest_version": 3,
+	"name": "Video Screenshot",
+	"description": "Create a screenshot of any video!",
+	"version": "0.1.0",
+	"minimum_chrome_version": "88",
+	"icons": {
+		"128": "icon128.png"
+	},
+	"options_ui": {
+		"page": "options/options.html"
+	},
+	"permissions": [
+		"scripting",
+		"activeTab",
+		"clipboardWrite",
+		"storage"
+	],
+	"action": {
+		"default_title": "Screenshot video",
+		"default_icon": {
+			"128": "icon128.png"
+		}
+	},
+	"background": {
+		"service_worker": "background.js",
+		"type": "module"
+	}
+}
