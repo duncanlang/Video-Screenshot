@@ -1,5 +1,6 @@
 const isFirefox = typeof browser !== "undefined" && typeof browser.runtime !== "undefined";
 const isChrome = typeof chrome !== "undefined" && typeof browser === "undefined";
+document.body.classList.add(isFirefox ? "firefox" : "chrome");
 
 let isAndroid = (navigator.userAgent.includes('Android'));
 
