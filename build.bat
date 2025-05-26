@@ -26,5 +26,3 @@ xcopy /e /i /y "%COMMON_DIR%" "%DIST_DIR%"
 copy /y "%TARGET_DIR%\manifest.json" "%DIST_DIR%\manifest.json"
 
 echo Build complete: %DIST_DIR%
-
-powershell Compress-Archive -Path "%DIST_DIR%\*" -DestinationPath "%SOURCE_DIR%%TARGET%.zip" -Force
