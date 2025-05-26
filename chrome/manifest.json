@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
-	"name": "Video Screenshot",
-	"description": "Create a screenshot of any video!",
+	"name": "Quick Video Screenshot",
+	"description": "Quickly download a screenshot from any video without the need for permissions!",
 	"version": "0.1.0",
 	"minimum_chrome_version": "88",
 	"icons": {
